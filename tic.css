@@ -7,7 +7,7 @@
     background-color: #a5b5c5;
 }
 .w-1140 {
-    width: 1200px;
+    width: 1140px;
     margin: auto;
 }
 .w-50 {
@@ -15,6 +15,7 @@
 }
 .value-1 {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     height: auto;
 }
@@ -74,6 +75,8 @@
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
  }
  .t4 .main-box button {
     width: 100px;
@@ -107,5 +110,106 @@
     padding: 25px;
     background-color: #6482AD;
 }
+table {
+    width: 65%;
+}
 
+@media (max-width:1200px) {
+    .w-1140 {
+        width: 1140px;
+    }   
+}
+@media (min-width:993px) and (max-width:1140px) {
+    .w-1140 {
+        width: 960px;
+    }
+   
+}
+@media (max-width:992px) {
+    .w-1140 {
+        width: 960px;
+    }   
+    .t1 h3 {
+        font-size: 30px;
+    }
+
+}
+@media (min-width:767px) and (max-width:960px) {
+    .w-1140 {
+        width: 720px;
+    }
+    table {
+        width: 100%;
+    }
+    .t4 .main-box button {
+        width: 75px;
+        height: 75px;
+    }
+    .t4 .main-box {
+        width: 280px;
+        height: 280px;
+    }
+}
+@media (max-width:768px) {
+    .w-1140 {
+        width: 720px;
+    }   
+    table {
+        width: 100%;
+    }
+    .t4 .main-box button {
+        width: 75px;
+        height: 75px;
+    }
+    .t4 .main-box {
+        width: 280px;
+        height: 280px;
+    }
+}
+@media (min-width:577px) and (max-width:720px) {
+    .w-1140 {
+        width: 540px;
+    }
+    .value-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .m1 {
+        margin: 5px;
+    }
+    .w-50 {
+        width: 100%;
+    }
+}
+@media (max-width:576px) {
+    .w-1140 {
+        width: 540px;
+    }   
+    .value-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .m1 {
+        margin:5px;
+    }
+    .w-50 {
+        width: 100%;
+    }
+}
+@media (max-width:540px) {
+    .w-1140 {
+        width: 100%	;
+    }  
+    .value-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .m1 {
+        margin: 5px;
+    }
+    .w-50 {
+        width: calc(100% - 30px);
+        margin: auto;
+    } 
+}
 
